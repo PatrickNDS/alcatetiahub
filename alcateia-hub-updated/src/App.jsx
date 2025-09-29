@@ -115,14 +115,7 @@ function Header({ user, onLoginSuccess, onLogout }) {
 // Componente Hero Section
 function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/src/assets/backgrounds/cyberpunk_background_1.jpg')`,
-          filter: 'brightness(0.3)'
-        }}
-      />
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       <div className="hero-gradient absolute inset-0" />
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">

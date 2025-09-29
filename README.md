@@ -1,4 +1,4 @@
-# Alcateia Hub - Frontend Atualizado
+# Alcateia Hub - Frontend Atualizado v2.2
 
 ## 🚀 Melhorias Implementadas
 
@@ -9,6 +9,14 @@
 - **Card destacado** na seção de recursos principais
 - **Seção completa** com todos os campos funcionais
 
+### 🎨 Tema Preto Total com Bordas Vermelhas (Inspirado no WuWa Tracker)
+- **Fundo totalmente preto** igual ao wuwatracker.com/pt
+- **Vermelho vibrante** aplicado apenas nas bordas e contornos
+- **Cards com fundo preto** e bordas vermelhas elegantes
+- **Inputs e elementos** com bordas vermelhas ao focar
+- **Contraste marcante** entre preto e vermelho
+- **Visual limpo e moderno** sem gradientes ou texturas
+
 ### ✅ Funcionalidades Preservadas
 - **Tier Lists** - Sistema completo de criação e visualização
 - **Guias de Personagens** - Análises detalhadas e builds
@@ -18,9 +26,11 @@
 
 ### ✅ Melhorias de UX/UI
 - **Navegação suave** entre seções com scroll automático
-- **Cards interativos** com hover effects
+- **Cards interativos** com hover effects aprimorados
 - **Menu responsivo** para dispositivos móveis
-- **Design cyberpunk** mantido e aprimorado
+- **Scrollbar personalizada** com tema escuro
+- **Animações fade-in** para elementos
+- **Efeitos neon** nos botões principais
 
 ## 📦 Instalação
 
@@ -90,5 +100,16 @@ O projeto está pronto para deploy em qualquer plataforma que suporte aplicaçõ
 ---
 
 **Desenvolvido por:** Manus AI  
-**Versão:** 2.0 - Calculadora Integrada  
+**Versão:** 2.2 - Tema Preto Total com Bordas Vermelhas + Calculadora Integrada  
 **Data:** Setembro 2025
+
+## 🎨 Detalhes da Nova Paleta de Cores
+
+### Cores Principais
+- **Background:** `oklch(0.05 0 0)` - Preto total como o WuWa Tracker
+- **Primary:** `oklch(0.55 0.22 15)` - Vermelho vibrante
+- **Card:** `oklch(0.08 0 0)` - Preto ligeiramente mais claro para cards
+- **Border:** `oklch(0.55 0.22 15)` - Bordas vermelhas vibrantes
+
+### Inspiração
+Baseado no design **totalmente preto** do **wuwatracker.com/pt**, com o vermelho característico do Alcateia Hub aplicado **apenas nas bordas e contornos** dos elementos, criando um contraste elegante e marcante.
