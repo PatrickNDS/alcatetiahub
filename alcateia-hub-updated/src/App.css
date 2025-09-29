@@ -75,7 +75,7 @@
   --destructive: oklch(0.6 0.25 15);
   
   /* Bordas vermelhas */
-  --border: oklch(0.55 0.22 15);
+  --border: oklch(0.1 0 0);
   --input: oklch(0.08 0 0);
   --ring: oklch(0.55 0.22 15);
   
@@ -114,7 +114,7 @@
   --accent: oklch(0.45 0.15 15);
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.6 0.25 15);
-  --border: oklch(0.55 0.22 15);
+  --border: oklch(0.1 0 0);
   --input: oklch(0.08 0 0);
   --ring: oklch(0.55 0.22 15);
   --chart-1: oklch(0.55 0.22 15);
@@ -134,7 +134,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-gray-800 outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
@@ -188,26 +188,28 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(12px);
   background: oklch(0.08 0 0 / 0.8);
-  border: 1px solid var(--border);
+  border: 1px solid oklch(0.1 0 0);
 }
 
 .character-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 40px oklch(0.55 0.22 15 / 0.2),
-              0 0 0 1px var(--border);
+              0 0 0 1px var(--primary);
   background: oklch(0.1 0 0 / 0.9);
 }
 
 .glass-effect {
   background: oklch(0.08 0 0 / 0.6);
   backdrop-filter: blur(16px);
-  border: 1px solid var(--border);
+  border: 1px solid oklch(0.1 0 0);
+  transition: border-color 0.3s ease;
 }
 
 .glass-effect:hover {
-  background: oklch(0.1 0 0 / 0.7);
   border-color: var(--primary);
 }
+
+
 
 .hero-gradient {
   background: transparent;

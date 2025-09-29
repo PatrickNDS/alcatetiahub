@@ -16,7 +16,7 @@ function Header({ user, onLoginSuccess, onLogout }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full z-50 glass-effect border-b border-border">
+    <header className="fixed top-0 w-full z-50 bg-background border-b border-transparent hover:border-primary transition-colors duration-300">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
