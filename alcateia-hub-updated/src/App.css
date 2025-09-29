@@ -141,20 +141,19 @@
   }
 }
 
-/* Alcateia Hub Custom Styles - Inspirado no WuWa Tracker com bordas vermelhas */
-.cyberpunk-bg {
+/* Alcateia Hub Custom Styles - Design Minimalista Moderno */
+.minimal-bg {
   background: oklch(0.05 0 0);
 }
 
-.neon-glow {
-  box-shadow: 0 0 20px oklch(0.55 0.22 15 / 0.4), 
-              0 0 40px oklch(0.55 0.22 15 / 0.2);
-  border: 1px solid oklch(0.55 0.22 15 / 0.3);
+.minimal-button {
+  border: 1px solid oklch(0.1 0 0);
+  transition: all 0.2s ease;
 }
 
-.neon-glow:hover {
-  box-shadow: 0 0 25px oklch(0.55 0.22 15 / 0.6), 
-              0 0 50px oklch(0.55 0.22 15 / 0.3);
+.minimal-button:hover {
+  border-color: oklch(0.55 0.22 15);
+  transform: translateY(-1px);
 }
 
 /* Tier colors com nova paleta */
@@ -184,18 +183,17 @@
     oklch(0.7 0.20 285)); 
 }
 
-.character-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(12px);
-  background: oklch(0.08 0 0 / 0.8);
+.minimal-card {
+  transition: all 0.2s ease;
+  background: oklch(0.08 0 0);
   border: 1px solid oklch(0.1 0 0);
+  border-radius: 8px;
 }
 
-.character-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px oklch(0.55 0.22 15 / 0.2),
-              0 0 0 1px var(--primary);
-  background: oklch(0.1 0 0 / 0.9);
+.minimal-card:hover {
+  transform: translateY(-2px);
+  border-color: oklch(0.55 0.22 15);
+  box-shadow: 0 4px 12px oklch(0.05 0 0 / 0.3);
 }
 
 .glass-effect {
@@ -213,6 +211,50 @@
 
 .hero-gradient {
   background: transparent;
+}
+
+/* Layout Minimalista */
+.minimal-section {
+  padding: 4rem 0;
+}
+
+.minimal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.minimal-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.minimal-spacing {
+  margin-bottom: 3rem;
+}
+
+/* Tipografia Minimalista */
+.minimal-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: oklch(0.95 0 0);
+}
+
+.minimal-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: oklch(0.7 0 0);
+  margin-bottom: 2rem;
+}
+
+.minimal-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: oklch(0.65 0 0);
 }
 
 /* Melhorias nos inputs e botões */

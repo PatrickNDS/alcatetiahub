@@ -32,20 +32,28 @@
 - **Animações fade-in** para elementos
 - **Efeitos neon** nos botões principais
 
-## 📦 Instalação
+## 📦 Instalação e Deploy
+
+Este pacote já inclui a pasta `dist/` com os arquivos otimizados para produção. Você pode implantá-la diretamente em seu servidor web ou serviço de hospedagem.
+
+### Para Deploy (Produção)
+
+Basta copiar o conteúdo da pasta `dist/` para o diretório raiz do seu servidor web (ex: `public_html`, `www`).
+
+### Para Desenvolvimento
 
 ```bash
-# Instalar dependências
+# 1. Navegue até a pasta do projeto
+cd /caminho/para/alcateia-hub-updated
+
+# 2. Instale as dependências
 npm install --legacy-peer-deps
 
-# Executar em desenvolvimento
+# 3. Execute em desenvolvimento
 npm run dev
 
-# Build para produção
+# 4. Para gerar uma nova build de produção (se necessário)
 npm run build
-
-# Preview da build
-npm run preview
 ```
 
 ## 🛠️ Tecnologias Utilizadas
@@ -80,15 +88,6 @@ src/
 - **Cálculo Automático** - Stats finais calculados em tempo real
 - **Estimativa de Dano** - Diferentes tipos de ataque
 - **Dicas de Otimização** - Guias para melhorar builds
-
-## 🌐 Deploy
-
-O projeto está pronto para deploy em qualquer plataforma que suporte aplicações React:
-
-- **Vercel** - `vercel --prod`
-- **Netlify** - Drag & drop da pasta `dist/`
-- **GitHub Pages** - Com GitHub Actions
-- **Servidor próprio** - Servir arquivos da pasta `dist/`
 
 ## 📝 Notas de Desenvolvimento
 

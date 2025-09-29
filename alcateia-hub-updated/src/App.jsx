@@ -115,62 +115,60 @@ function Header({ user, onLoginSuccess, onLogout }) {
 // Componente Hero Section
 function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
-      <div className="hero-gradient absolute inset-0" />
-      
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
+    <section id="home" className="minimal-section min-h-screen flex items-center justify-center bg-background">
+      <div className="minimal-container text-center">
+        <h1 className="minimal-title text-6xl md:text-8xl">
           Alcateia Hub
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-300">
+        <p className="minimal-subtitle max-w-2xl mx-auto">
           O hub definitivo para jogos gacha. Crie tier lists, explore guias de personagens e conecte-se com a comunidade.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button size="lg" className="neon-glow" onClick={() => document.getElementById('build-calculator')?.scrollIntoView({ behavior: 'smooth' })}>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-16">
+          <Button size="lg" className="minimal-button" onClick={() => document.getElementById('build-calculator')?.scrollIntoView({ behavior: 'smooth' })}>
             <Calculator className="mr-2 h-5 w-5" />
             Calculadora de Build
           </Button>
-          <Button size="lg" variant="outline" className="glass-effect" onClick={() => document.getElementById('tier-lists')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button size="lg" variant="outline" className="minimal-button" onClick={() => document.getElementById('tier-lists')?.scrollIntoView({ behavior: 'smooth' })}>
             <List className="mr-2 h-5 w-5" />
             Criar Tier List
           </Button>
-          <Button size="lg" variant="outline" className="glass-effect" onClick={() => document.getElementById('characters')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button size="lg" variant="outline" className="minimal-button" onClick={() => document.getElementById('characters')?.scrollIntoView({ behavior: 'smooth' })}>
             <BookOpen className="mr-2 h-5 w-5" />
             Explorar Guias
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-16">
-          <Card className="glass-effect character-card cursor-pointer" onClick={() => document.getElementById('build-calculator')?.scrollIntoView({ behavior: 'smooth' })}>
-            <CardContent className="p-6 text-center">
-              <Calculator className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Calculadora de Build</h3>
-              <p className="text-muted-foreground">Otimize seus personagens com cálculos precisos</p>
+        <div className="minimal-grid">
+          <Card className="minimal-card cursor-pointer" onClick={() => document.getElementById('build-calculator')?.scrollIntoView({ behavior: 'smooth' })}>
+            <CardContent className="p-8 text-center">
+              <Calculator className="h-8 w-8 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-medium mb-2">Calculadora de Build</h3>
+              <p className="minimal-text">Otimize seus personagens com cálculos precisos</p>
             </CardContent>
           </Card>
           
-          <Card className="glass-effect character-card cursor-pointer" onClick={() => document.getElementById('tier-lists')?.scrollIntoView({ behavior: 'smooth' })}>
-            <CardContent className="p-6 text-center">
-              <List className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Tier Lists</h3>
-              <p className="text-muted-foreground">Crie e compartilhe suas tier lists personalizadas</p>
+          <Card className="minimal-card cursor-pointer" onClick={() => document.getElementById('tier-lists')?.scrollIntoView({ behavior: 'smooth' })}>
+            <CardContent className="p-8 text-center">
+              <List className="h-8 w-8 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-medium mb-2">Tier Lists</h3>
+              <p className="minimal-text">Crie e compartilhe suas tier lists personalizadas</p>
             </CardContent>
           </Card>
           
-          <Card className="glass-effect character-card cursor-pointer" onClick={() => document.getElementById('characters')?.scrollIntoView({ behavior: 'smooth' })}>
-            <CardContent className="p-6 text-center">
-              <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Guias de Personagens</h3>
-              <p className="text-muted-foreground">Builds, estratégias e análises detalhadas</p>
+          <Card className="minimal-card cursor-pointer" onClick={() => document.getElementById('characters')?.scrollIntoView({ behavior: 'smooth' })}>
+            <CardContent className="p-8 text-center">
+              <Users className="h-8 w-8 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-medium mb-2">Guias de Personagens</h3>
+              <p className="minimal-text">Builds, estratégias e análises detalhadas</p>
             </CardContent>
           </Card>
           
-          <Card className="glass-effect character-card">
-            <CardContent className="p-6 text-center">
-              <Gamepad2 className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="text-xl font-semibold mb-2">Comunidade</h3>
-              <p className="text-muted-foreground">Conecte-se com outros jogadores</p>
+          <Card className="minimal-card cursor-pointer">
+            <CardContent className="p-8 text-center">
+              <Gamepad2 className="h-8 w-8 mx-auto mb-4 text-primary" />
+              <h3 className="text-lg font-medium mb-2">Comunidade</h3>
+              <p className="minimal-text">Conecte-se com outros jogadores</p>
             </CardContent>
           </Card>
         </div>
@@ -209,13 +207,13 @@ function TierListsSection() {
   ]
 
   return (
-    <section id="tier-lists" className="py-20 px-4">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+    <section id="tier-lists" className="minimal-section">
+      <div className="minimal-container">
+        <div className="text-center minimal-spacing">
+          <h2 className="minimal-title">
             Tier Lists Populares
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="minimal-subtitle max-w-2xl mx-auto">
             Descubra as tier lists mais votadas pela comunidade e crie as suas próprias
           </p>
         </div>
@@ -230,33 +228,32 @@ function TierListsSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="minimal-grid">
           {tierLists.map((tierList) => (
-            <Card key={tierList.id} className="glass-effect character-card overflow-hidden">
-              <div className="relative h-48">
+            <Card key={tierList.id} className="minimal-card overflow-hidden">
+              <div className="relative h-40">
                 <img 
                   src={tierList.image} 
                   alt={tierList.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <Badge className="absolute top-4 left-4 bg-primary">
+                <Badge className="absolute top-3 left-3 bg-primary text-xs">
                   {tierList.game}
                 </Badge>
               </div>
               
-              <CardHeader>
-                <CardTitle className="text-lg">{tierList.title}</CardTitle>
-                <CardDescription>Por {tierList.author}</CardDescription>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-base font-medium">{tierList.title}</CardTitle>
+                <CardDescription className="minimal-text">Por {tierList.author}</CardDescription>
               </CardHeader>
               
-              <CardContent>
+              <CardContent className="pt-0">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 text-yellow-500 fill-current" />
-                    <span className="text-sm">{tierList.votes} votos</span>
+                    <Star className="h-3 w-3 text-yellow-500 fill-current" />
+                    <span className="minimal-text">{tierList.votes} votos</span>
                   </div>
-                  <Button size="sm" variant="outline">
+                  <Button size="sm" variant="outline" className="minimal-button">
                     Ver Tier List
                   </Button>
                 </div>
